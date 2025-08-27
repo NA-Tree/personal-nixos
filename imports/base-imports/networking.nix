@@ -1,4 +1,5 @@
-{...}:
+  GNU nano 8.4                                                 imports/base-imports/networking.nix                                                           
+{config, ...}:
 {
     networking.hostName = "solid-system-HMI";           # Define your hostname.
     networking.networkmanager.enable = true;            # Enable networking
@@ -11,8 +12,10 @@
         allowedUDPPortRanges = [
             { from = 4000; to = 4007; }
             { from = 8000; to = 8010; }
-            config.services.tailscale.port
         ];
+
+        allowedUDPPorts = [ config.services.tailscale.port ];
+
 
     };
 
