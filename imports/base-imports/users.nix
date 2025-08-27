@@ -8,7 +8,7 @@
 
   users.users.oren = {
     isNormalUser  = true;
-    home  = "/home/solid";
+    home  = "/home/oren";
     password = "Oren@123+";
     description  = "Solid System Admin user";
     extraGroups  = [ "wheel" "networkmanager" "vboxsf" ];
