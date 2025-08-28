@@ -104,7 +104,7 @@
               ./models/${model}/default.nix
             ]; 
 
-            specialArgs = { inherit inputs outputs jetpack-nixos vars; modelName = "${type}-${model}"; };
+            specialArgs = { inherit inputs outputs vars; modelName = "${type}-${model}"; };
             pkgs = model-types."${type}".pkgs;
           };
 

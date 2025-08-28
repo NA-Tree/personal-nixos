@@ -3,6 +3,7 @@
 let
   nodeEnv = pkgs.nodejs_20;
   user = "solid";
+  url = "google.com";
 in {
     
     
@@ -10,7 +11,7 @@ in {
     services.nginx.virtualHosts."hmi-ui" = {
     # locations."hmi-ui".index = "index.html";
     locations."/".tryFiles = "$uri $uri/ /index.html";
-        root = "${inputs.hmi_ui_dream.packages."x86_64-linux".default}/lib/node_modules//hmi-ui/dist";
+        root = url;
         listenAddresses = ["127.0.0.1" "*" ];
         listen = [{
 
@@ -22,7 +23,7 @@ in {
     };
 
     environment.systemPackages = with pkgs; [
-      hmi_ui_dream
+
     ];
 
 }
