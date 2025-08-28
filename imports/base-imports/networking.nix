@@ -1,4 +1,3 @@
-  GNU nano 8.4                                                 imports/base-imports/networking.nix                                                           
 {config, ...}:
 {
     networking.hostName = "solid-system-HMI";           # Define your hostname.
