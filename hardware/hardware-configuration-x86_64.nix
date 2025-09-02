@@ -6,6 +6,8 @@
   boot = {
     initrd.availableKernelModules = [ "ata_piix" "ohci_pci" "ehci_pci" "sd_mod" "sr_mod" ];
 
+    binfmt.emulatedSystems = [ "aarch64-linux" ];
+
     loader = {
         grub.enable = lib.mkDefault false;
         generic-extlinux-compatible.enable = lib.mkDefault true;

@@ -2,6 +2,6 @@
 {
     # Install Programs
     environment.systemPackages = with pkgs;  [
-
+        firefox
     ];
 }

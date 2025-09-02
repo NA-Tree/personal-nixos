@@ -2,6 +2,8 @@
 {
     # Install Programs
     environment.systemPackages = with pkgs; [
+        vim
+        nano
         bash
         git
         openssh
