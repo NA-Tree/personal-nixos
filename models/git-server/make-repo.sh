@@ -1,0 +1,1 @@
+sudo -u git bash -c "git init --bare ~/${1}.git"

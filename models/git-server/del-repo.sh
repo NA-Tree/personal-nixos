@@ -1,0 +1,1 @@
+sudo -u git bash -c "rm -rf ~/${1}.git"
