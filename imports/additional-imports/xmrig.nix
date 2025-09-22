@@ -7,6 +7,6 @@
 
         settings = builtins.fromJSON( builtins.readFile( ../../resources/mining.json ) );
         
-    }
+    };
 
 }

@@ -15,7 +15,7 @@
 
   imports = [
     ./extra-packages.nix
-    ../../imports/additional-imports/monero.nix
+    ../../imports/additional-imports/xmrig.nix
   ];
 
 
